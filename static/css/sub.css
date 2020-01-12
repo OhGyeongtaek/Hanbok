@@ -1,0 +1,31 @@
+body{
+	background:url('/static/img/sub_back.png');
+}
+.cont-up{
+	height:150px;
+	text-align:center; }
+	 
+.cont-up{
+	background:#000;
+	opacity:0.7;
+}
+.cont-up span{
+	display:inline-block;
+	color:#fff;
+	font-size:40px;
+	font-weight:bold;
+	font-family:'malgun gothic';
+	animation:subAnimation 5s;
+	padding:40px 0;
+	opacity:1;
+	margin:0; }
+
+.content{
+	background:#fff;
+	min-height:500px;
+}
+
+@keyframes subAnimation{
+	from{ margin-left:200px; opacity:0; }
+	to{ margin-left:0; opacity:1; }
+}

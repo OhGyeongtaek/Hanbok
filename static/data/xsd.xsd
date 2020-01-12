@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="hanboklist">
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element name="list" minOccurs="0" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="type" type="xs:string"/>
+							<xs:element name="gender" type="xs:string"/>
+							<xs:element name="price">
+							  <xs:simpleType>
+								<xs:restriction base="xs:integer">
+								  <xs:minInclusive value="1"/>
+								  <xs:maxInclusive value="50000"/>
+								</xs:restriction>
+							  </xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

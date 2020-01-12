@@ -1,0 +1,111 @@
+/*setting*/
+*{ margin:0; padding:0; font-family:'malgun gothic'; color:#444; }
+ul li{ list-style:none; }
+a{ color:#444; text-decoration:none; }
+table{ width:100%; border-collapse:collapse; border-spacing:0; }
+[type=button],[type=submit],[type=reset],[data-url]{
+	cursor:pointer; }
+
+.wrap > section{
+	padding-top:30px; }
+/*header*/
+header{
+	background:#000;
+	opacity:0.8;
+	min-width:1000px;
+	height:60px; }
+
+header h1{
+	padding-top:10px;}
+
+header h1 a{
+	color:#fff; }
+
+header .header{
+	width:1000px;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between; }
+
+header .header ul{
+	padding-top:18px;
+	width:700px;
+	display:flex;
+	justify-content:space-between; }
+	
+header .header ul li a{
+	color:#fff;
+	font-weight:bold; }
+
+.cont-up{
+	min-width:1000px;
+	height:500px;
+	overflow:hidden;
+	position:relative; }
+
+.cont-up aside{
+	top:50px;
+	position:relative;
+	width:1000px;
+	margin:0 auto;
+	z-index:999; }
+
+.cont-up aside > input{
+	float:left; }
+
+.cont-up aside div{
+	opacity:0.8;
+	transition:all 1s;
+	width:240px;
+	height:65px;
+	overflow:hidden;
+	position:relative;
+	float:left; }
+
+.cont-up aside.active div{
+	width:0; }
+
+.cont-up aside ul{
+	width:300px;
+	overflow:hidden;
+	margin-top:5px; }
+	
+.cont-up aside div ul li{
+	margin-top:5px;
+	background:#eee;
+	padding:2.5px 10px;
+	float:left; }
+
+.cont-up aside div ul li a{
+	display:inline-block;
+	width:40px;
+	height:40px; }
+
+.cont-up aside div ul li:nth-of-type(1) a{
+	background:url('/static/img/icon2.png'); }
+	
+.cont-up aside div ul li:nth-of-type(2) a{
+	background:url('/static/img/icon3.png'); }
+	
+.cont-up aside div ul li:nth-of-type(3) a{
+	background:url('/static/img/icon4.png'); }
+	
+.cont-up aside div ul li:nth-of-type(4) a{
+	background:url('/static/img/icon5.png'); }
+	
+.cont-up aside > a{
+	margin-top:10px;
+	display:inline-block;
+	width:15px;
+	height:60px;
+	background:url('/static/img/icon_button_side.png')no-repeat; }
+
+footer{
+	background:#222; }
+	
+footer p{
+	width:1000px;
+	margin:0 auto;
+	color:#fff;
+	padding:10px 0;
+	font-size:14px; }
